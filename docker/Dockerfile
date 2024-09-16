@@ -2,7 +2,7 @@
 # Affiliation: National Center for Atmospheric Research, Computational and Information Systems Laboratory
 # Created: 03-29-2024
 
-FROM ssuresh1809/samurai:nvhpc24_3
+FROM docker.io/ssuresh1809/samurai:nvhpc24_3
 
 LABEL maintainer="Supreeth Suresh <ssuresh@ucar.edu>"
 
