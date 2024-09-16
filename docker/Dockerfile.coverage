@@ -1,7 +1,7 @@
 # Author: Jian Sun
 # Affiliation: National Center for Atmospheric Research, Computational and Information Systems Laboratory
 # Created: 07/10/2024
-FROM jiansunncar/ubuntu_gcc13.2.0_samurai_beltrami:v0
+FROM docker.io/jiansunncar/ubuntu_gcc13.2.0_samurai_beltrami:v0
 
 LABEL maintainer="Jian Sun <sunjian@ucar.edu>"
 
