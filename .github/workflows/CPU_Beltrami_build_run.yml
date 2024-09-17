@@ -12,6 +12,7 @@ jobs:
   docker-build-and-test:
     name: Build and Test - ${{ matrix.dockerfile }}
     runs-on: arc-runner-set
+    container: alpine
     strategy:
       fail-fast: false
       matrix:
