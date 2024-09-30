@@ -36,6 +36,10 @@ spec:
       - name: DATE_TAG
     container:
       image: gcr.io/kaniko-project/executor:latest
+      lifecycle:
+        postStart:
+          exec:
+            command: ["/bin/sh", "apt", "install", "-y", "cmake", "g++"]
       command: ["/kaniko/executor"]
       args:
       - "--context=git://github.com/Gin-G/samurai-ncote.git"
