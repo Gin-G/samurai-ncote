@@ -10,7 +10,6 @@ jobs:
     steps:
     - name: Checkout code from a pull request or push
       uses: actions/checkout@v3
-
     - name: Delete huge unnecessary tools folder
       run: rm -rf /opt/hostedtoolcache
 
