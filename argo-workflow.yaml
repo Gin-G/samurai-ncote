@@ -28,7 +28,6 @@ spec:
             value: "{{workflow.parameters.DOCKERHUB_TOKEN}}"
           - name: DATE_TAG
             value: "{{workflow.parameters.DATE_TAG}}"
-
   - name: kaniko
     inputs:
       parameters:
