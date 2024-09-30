@@ -40,6 +40,7 @@ spec:
       command: ["/kaniko/executor"]
       args:
       - "--context=git://github.com/Gin-G/samurai-ncote.git"
+      - "--dockerfile=docker/Dockerfile"
       - "--destination=docker.io/ncging/samurai-kaniko:{{inputs.parameters.DATE_TAG}}"
       # Add more build arguments as needed
       env:
