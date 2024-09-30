@@ -20,7 +20,7 @@ jobs:
     - name: Apt Install
       run: |
         sudo apt update && \
-        sudo apt install -y curl jq cmake gcc
+        sudo apt install -y curl jq cmake gcc make g++
 
     - name: Install Argo CLI
       run: |
