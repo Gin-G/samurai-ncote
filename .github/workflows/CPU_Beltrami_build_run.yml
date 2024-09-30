@@ -17,10 +17,10 @@ jobs:
       id: date
       run: echo "date=$(date +'%Y-%m-%d.%H.%M')" >> $GITHUB_OUTPUT
 
-    - name: Install curl & jq
+    - name: Apt Install
       run: |
         sudo apt update && \
-        sudo apt install -y curl jq
+        sudo apt install -y curl jq cmake
 
     - name: Install Argo CLI
       run: |
