@@ -3,7 +3,7 @@ FROM alpine:3
 
 RUN rm /var/spool/mail && \
     mv /var/mail /var/spool/mail && \
-    ln -s spool/mail /var/mail
+    ln -s /var/spool/mail /var/mail
 
 RUN apk update && \
     apk upgrade && \
