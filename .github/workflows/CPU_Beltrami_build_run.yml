@@ -6,7 +6,7 @@ on:
 
 jobs:
   docker-build-and-test:
-    runs-on: gh-arc-set-samurai-runner
+    runs-on: gh-arc-runners-samurai-runner
     steps:
     - name: Checkout code from a pull request or push
       uses: actions/checkout@v3
