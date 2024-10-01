@@ -9,8 +9,7 @@ RUN apk update && \
     cmake \
     gcc \
     g++ \
-    make \
-    build-essentials
+    make 
 
 COPY --from=kaniko /kaniko /kaniko
 
