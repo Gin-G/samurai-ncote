@@ -16,7 +16,6 @@ jobs:
     - name: Get the current date for an image tag
       id: date
       run: echo "date=$(date +'%Y-%m-%d.%H.%M')" >> $GITHUB_OUTPUT
-
     - name: Apt Install
       run: |
         sudo apt update && \
@@ -81,7 +80,7 @@ jobs:
         fi
         
         echo "Argo Workflow succeeded"
-        
+
     - name: Clean up Argo Workflow
       if: always()
       run: |
