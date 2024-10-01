@@ -1,6 +1,10 @@
 FROM gcr.io/kaniko-project/executor:debug AS kaniko
 FROM alpine:3
 
+RUN rm /var/spool/mail && \
+    mv /var/mail /var/spool/mail && \
+    ln -s spool/mail /var/mail
+
 RUN apk update && \
     apk upgrade && \
     apk add --no-cache \

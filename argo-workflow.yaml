@@ -35,7 +35,7 @@ spec:
       - name: DOCKERHUB_TOKEN
       - name: DATE_TAG
     container:
-      image: docker.io/ncote/kaniko-samurai:v2
+      image: docker.io/ncote/kaniko-samurai:v3
       command: ["/kaniko/executor"]
       args:
       - "--context=git://github.com/Gin-G/samurai-ncote.git"
