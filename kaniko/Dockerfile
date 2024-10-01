@@ -6,7 +6,11 @@ RUN apk update && \
     apk add --no-cache \
     bash \
     curl \
-    cmake
+    cmake \
+    gcc \
+    g++ \
+    make \
+    build-essentials
 
 COPY --from=kaniko /kaniko /kaniko
 
