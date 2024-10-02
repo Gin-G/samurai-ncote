@@ -12,7 +12,10 @@ jobs:
       uses: actions/checkout@v3
     - name: Delete huge unnecessary tools folder
       run: rm -rf /opt/hostedtoolcache
-
+    - name: Install Buildah
+      run: |
+        sudo apt-get update && \
+        sudo apt-get -y install buildah
     - name: Get the current date for an image tag
       id: date
       run: echo "date=$(date +'%Y-%m-%d.%H.%M')" >> $GITHUB_OUTPUT
