@@ -12,6 +12,9 @@ WORKDIR /app/
 
 COPY . /app/samurai
 
+RUN sudo apt-get update && \
+    sudo apt-get install -y cmake build-essentials
+
 RUN cd samurai && \
     export SAMURAI_ROOT=$(pwd) && \
     export LROSE_INSTALL_DIR=/usr/local && \
