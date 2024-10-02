@@ -15,7 +15,8 @@ jobs:
     - name: Install Buildah
       run: |
         sudo apt-get update && \
-        sudo apt-get -y install buildah
+        sudo apt-get -y install buildah && \
+        su - $(id -un 1000)
     - name: Get the current date for an image tag
       id: date
       run: echo "date=$(date +'%Y-%m-%d.%H.%M')" >> $GITHUB_OUTPUT
